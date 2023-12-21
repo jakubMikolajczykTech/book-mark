@@ -1,0 +1,80 @@
+@import ".././utils/variable.scss";
+
+.footer-container {
+  background-color: $darkBlue;
+  padding: 20px;
+  text-align: center;
+  color: white;
+
+  .wrapper {
+    max-width: 1720px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+    .footer-logo {
+      margin-right: 50px;
+    }
+
+    .footer-links {
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 20px;
+        width: 100%;
+      }
+
+      hr {
+        width: 100%;
+        margin: 5px 0;
+        border: 0;
+        border-top: 1px solid white;
+      }
+    }
+
+    .footer-links a:last-child {
+      margin-right: 0;
+    }
+
+    .footer-social {
+      display: flex;
+      align-items: center;
+
+      .footer-icon:nth-child(2) {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .wrapper {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      align-items: center;
+    }
+
+    .footer-links {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      hr {
+        border-top: 1px solid $grayish !important;
+        margin-top: 10px;
+      }
+
+      img {
+        margin-left: 40px;
+      }
+    }
+
+    .footer-links a {
+      padding: 10px;
+    }
+  }
+}

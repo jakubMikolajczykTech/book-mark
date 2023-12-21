@@ -1,0 +1,18 @@
+@import "./components/utils/variable.scss";
+@import "./components/Main/Article/Article.scss";
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: $darkBlue;
+    margin: 0px;
+    min-width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1920px) {
+    body {
+        min-width: 0;
+    }
+}
